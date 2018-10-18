@@ -12,8 +12,14 @@
 		B333671420A31B1D00A19E2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B333671220A31B1D00A19E2D /* Main.storyboard */; };
 		B333671620A31B1D00A19E2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B333671520A31B1D00A19E2D /* Assets.xcassets */; };
 		B333671920A31B1D00A19E2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B333671720A31B1D00A19E2D /* LaunchScreen.storyboard */; };
-		B333672420A31B1D00A19E2D /* AudioProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B333672320A31B1D00A19E2D /* AudioProjectTests.swift */; };
-		B333672F20A31B1D00A19E2D /* AudioProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B333672E20A31B1D00A19E2D /* AudioProjectUITests.swift */; };
+		B34CF6BD20AEC0940029EB98 /* This Is What You Came For (Feat. Rihanna).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B34CF6B820AEC0940029EB98 /* This Is What You Came For (Feat. Rihanna).mp3 */; };
+		B34CF6BE20AEC0940029EB98 /* No Tears Left To Cry.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B34CF6B920AEC0940029EB98 /* No Tears Left To Cry.mp3 */; };
+		B34CF6BF20AEC0940029EB98 /* Waiting For Love.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B34CF6BA20AEC0940029EB98 /* Waiting For Love.mp3 */; };
+		B34CF6C020AEC0940029EB98 /* The Nights.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B34CF6BB20AEC0940029EB98 /* The Nights.mp3 */; };
+		B34CF6C520AECF7A0029EB98 /* Wake Me Up (Radio Edit).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B34CF6C420AECF7A0029EB98 /* Wake Me Up (Radio Edit).mp3 */; };
+		B3C3889D20ADE43E007E5E34 /* musicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C3889C20ADE43E007E5E34 /* musicData.swift */; };
+		B3D6DEE520A95C8E000271C1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D6DEE420A95C8E000271C1 /* MainViewController.swift */; };
+		B3D6DEEA20A975ED000271C1 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D6DEE920A975ED000271C1 /* MainTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +40,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B333670B20A31B1D00A19E2D /* AudioProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B333670E20A31B1D00A19E2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B333671020A31B1D00A19E2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B333671320A31B1D00A19E2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B333671520A31B1D00A19E2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B333671820A31B1D00A19E2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B333671A20A31B1D00A19E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B333671F20A31B1D00A19E2D /* AudioProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B333672320A31B1D00A19E2D /* AudioProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioProjectTests.swift; sourceTree = "<group>"; };
-		B333672520A31B1D00A19E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B333672A20A31B1D00A19E2D /* AudioProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B333672E20A31B1D00A19E2D /* AudioProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioProjectUITests.swift; sourceTree = "<group>"; };
-		B333673020A31B1D00A19E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B34CF6B120AE6A7E0029EB98 /* AudioProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B34CF6B820AEC0940029EB98 /* This Is What You Came For (Feat. Rihanna).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "This Is What You Came For (Feat. Rihanna).mp3"; sourceTree = "<group>"; };
+		B34CF6B920AEC0940029EB98 /* No Tears Left To Cry.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "No Tears Left To Cry.mp3"; sourceTree = "<group>"; };
+		B34CF6BA20AEC0940029EB98 /* Waiting For Love.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Waiting For Love.mp3"; sourceTree = "<group>"; };
+		B34CF6BB20AEC0940029EB98 /* The Nights.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Nights.mp3"; sourceTree = "<group>"; };
+		B34CF6C420AECF7A0029EB98 /* Wake Me Up (Radio Edit).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Wake Me Up (Radio Edit).mp3"; sourceTree = "<group>"; };
+		B352A96B2178468400EDF119 /* AudioProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B352A96C2178468400EDF119 /* AudioProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3C3889C20ADE43E007E5E34 /* musicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicData.swift; sourceTree = "<group>"; };
+		B3D6DEE420A95C8E000271C1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B3D6DEE920A975ED000271C1 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,21 +87,13 @@
 		B333670220A31B1D00A19E2D = {
 			isa = PBXGroup;
 			children = (
+				B34CF6CA20AF0D9D0029EB98 /* Model */,
+				B3C3888D20ADC10F007E5E34 /* musicFile */,
 				B333670D20A31B1D00A19E2D /* AudioProject */,
-				B333672220A31B1D00A19E2D /* AudioProjectTests */,
-				B333672D20A31B1D00A19E2D /* AudioProjectUITests */,
-				B333670C20A31B1D00A19E2D /* Products */,
+				B34CF6B120AE6A7E0029EB98 /* AudioProject.app */,
+				B352A96B2178468400EDF119 /* AudioProjectTests.xctest */,
+				B352A96C2178468400EDF119 /* AudioProjectUITests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		B333670C20A31B1D00A19E2D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B333670B20A31B1D00A19E2D /* AudioProject.app */,
-				B333671F20A31B1D00A19E2D /* AudioProjectTests.xctest */,
-				B333672A20A31B1D00A19E2D /* AudioProjectUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		B333670D20A31B1D00A19E2D /* AudioProject */ = {
@@ -100,29 +102,33 @@
 				B333670E20A31B1D00A19E2D /* AppDelegate.swift */,
 				B333671020A31B1D00A19E2D /* ViewController.swift */,
 				B333671220A31B1D00A19E2D /* Main.storyboard */,
+				B3D6DEE420A95C8E000271C1 /* MainViewController.swift */,
 				B333671520A31B1D00A19E2D /* Assets.xcassets */,
 				B333671720A31B1D00A19E2D /* LaunchScreen.storyboard */,
 				B333671A20A31B1D00A19E2D /* Info.plist */,
+				B3D6DEE920A975ED000271C1 /* MainTableViewCell.swift */,
 			);
 			path = AudioProject;
 			sourceTree = "<group>";
 		};
-		B333672220A31B1D00A19E2D /* AudioProjectTests */ = {
+		B34CF6CA20AF0D9D0029EB98 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B333672320A31B1D00A19E2D /* AudioProjectTests.swift */,
-				B333672520A31B1D00A19E2D /* Info.plist */,
+				B3C3889C20ADE43E007E5E34 /* musicData.swift */,
 			);
-			path = AudioProjectTests;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		B333672D20A31B1D00A19E2D /* AudioProjectUITests */ = {
+		B3C3888D20ADC10F007E5E34 /* musicFile */ = {
 			isa = PBXGroup;
 			children = (
-				B333672E20A31B1D00A19E2D /* AudioProjectUITests.swift */,
-				B333673020A31B1D00A19E2D /* Info.plist */,
+				B34CF6B920AEC0940029EB98 /* No Tears Left To Cry.mp3 */,
+				B34CF6BB20AEC0940029EB98 /* The Nights.mp3 */,
+				B34CF6C420AECF7A0029EB98 /* Wake Me Up (Radio Edit).mp3 */,
+				B34CF6B820AEC0940029EB98 /* This Is What You Came For (Feat. Rihanna).mp3 */,
+				B34CF6BA20AEC0940029EB98 /* Waiting For Love.mp3 */,
 			);
-			path = AudioProjectUITests;
+			path = musicFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +148,7 @@
 			);
 			name = AudioProject;
 			productName = AudioProject;
-			productReference = B333670B20A31B1D00A19E2D /* AudioProject.app */;
+			productReference = B34CF6B120AE6A7E0029EB98 /* AudioProject.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B333671E20A31B1D00A19E2D /* AudioProjectTests */ = {
@@ -160,7 +166,7 @@
 			);
 			name = AudioProjectTests;
 			productName = AudioProjectTests;
-			productReference = B333671F20A31B1D00A19E2D /* AudioProjectTests.xctest */;
+			productReference = B352A96B2178468400EDF119 /* AudioProjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		B333672920A31B1D00A19E2D /* AudioProjectUITests */ = {
@@ -178,7 +184,7 @@
 			);
 			name = AudioProjectUITests;
 			productName = AudioProjectUITests;
-			productReference = B333672A20A31B1D00A19E2D /* AudioProjectUITests.xctest */;
+			productReference = B352A96C2178468400EDF119 /* AudioProjectUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -216,7 +222,7 @@
 				Base,
 			);
 			mainGroup = B333670220A31B1D00A19E2D;
-			productRefGroup = B333670C20A31B1D00A19E2D /* Products */;
+			productRefGroup = B333670220A31B1D00A19E2D;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -232,8 +238,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B34CF6BD20AEC0940029EB98 /* This Is What You Came For (Feat. Rihanna).mp3 in Resources */,
+				B34CF6C020AEC0940029EB98 /* The Nights.mp3 in Resources */,
+				B34CF6BE20AEC0940029EB98 /* No Tears Left To Cry.mp3 in Resources */,
+				B34CF6BF20AEC0940029EB98 /* Waiting For Love.mp3 in Resources */,
 				B333671920A31B1D00A19E2D /* LaunchScreen.storyboard in Resources */,
 				B333671620A31B1D00A19E2D /* Assets.xcassets in Resources */,
+				B34CF6C520AECF7A0029EB98 /* Wake Me Up (Radio Edit).mp3 in Resources */,
 				B333671420A31B1D00A19E2D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +271,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B333671120A31B1D00A19E2D /* ViewController.swift in Sources */,
+				B3D6DEE520A95C8E000271C1 /* MainViewController.swift in Sources */,
+				B3D6DEEA20A975ED000271C1 /* MainTableViewCell.swift in Sources */,
+				B3C3889D20ADE43E007E5E34 /* musicData.swift in Sources */,
 				B333670F20A31B1D00A19E2D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +282,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B333672420A31B1D00A19E2D /* AudioProjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +289,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B333672F20A31B1D00A19E2D /* AudioProjectUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
