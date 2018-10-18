@@ -15,6 +15,7 @@
 		B352A96E2178B79D00EDF119 /* Ketsa_-_15_-_sullen_faced.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B352A96D2178B79D00EDF119 /* Ketsa_-_15_-_sullen_faced.mp3 */; };
 		B352A9702178B7E000EDF119 /* Broke_For_Free_-_01_-_Night_Owl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B352A96F2178B7E000EDF119 /* Broke_For_Free_-_01_-_Night_Owl.mp3 */; };
 		B352A9722178B86B00EDF119 /* Yaka-anima_-_05_-_Mint_Tea_in_Sabilas_Garden.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B352A9712178B86B00EDF119 /* Yaka-anima_-_05_-_Mint_Tea_in_Sabilas_Garden.mp3 */; };
+		B352A9742178B8E100EDF119 /* Illocanblo__Csum_-_01_-_Brutalix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B352A9732178B8E100EDF119 /* Illocanblo__Csum_-_01_-_Brutalix.mp3 */; };
 		B3C3889D20ADE43E007E5E34 /* musicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C3889C20ADE43E007E5E34 /* musicData.swift */; };
 		B3D6DEE520A95C8E000271C1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D6DEE420A95C8E000271C1 /* MainViewController.swift */; };
 		B3D6DEEA20A975ED000271C1 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D6DEE920A975ED000271C1 /* MainTableViewCell.swift */; };
@@ -50,6 +51,7 @@
 		B352A96D2178B79D00EDF119 /* Ketsa_-_15_-_sullen_faced.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ketsa_-_15_-_sullen_faced.mp3"; sourceTree = "<group>"; };
 		B352A96F2178B7E000EDF119 /* Broke_For_Free_-_01_-_Night_Owl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Broke_For_Free_-_01_-_Night_Owl.mp3"; sourceTree = "<group>"; };
 		B352A9712178B86B00EDF119 /* Yaka-anima_-_05_-_Mint_Tea_in_Sabilas_Garden.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Yaka-anima_-_05_-_Mint_Tea_in_Sabilas_Garden.mp3"; sourceTree = "<group>"; };
+		B352A9732178B8E100EDF119 /* Illocanblo__Csum_-_01_-_Brutalix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Illocanblo__Csum_-_01_-_Brutalix.mp3"; sourceTree = "<group>"; };
 		B3C3889C20ADE43E007E5E34 /* musicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicData.swift; sourceTree = "<group>"; };
 		B3D6DEE420A95C8E000271C1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B3D6DEE920A975ED000271C1 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				B352A9712178B86B00EDF119 /* Yaka-anima_-_05_-_Mint_Tea_in_Sabilas_Garden.mp3 */,
 				B352A96F2178B7E000EDF119 /* Broke_For_Free_-_01_-_Night_Owl.mp3 */,
 				B352A96D2178B79D00EDF119 /* Ketsa_-_15_-_sullen_faced.mp3 */,
+				B352A9732178B8E100EDF119 /* Illocanblo__Csum_-_01_-_Brutalix.mp3 */,
 			);
 			path = musicFile;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				B352A9722178B86B00EDF119 /* Yaka-anima_-_05_-_Mint_Tea_in_Sabilas_Garden.mp3 in Resources */,
 				B352A9702178B7E000EDF119 /* Broke_For_Free_-_01_-_Night_Owl.mp3 in Resources */,
 				B333671420A31B1D00A19E2D /* Main.storyboard in Resources */,
+				B352A9742178B8E100EDF119 /* Illocanblo__Csum_-_01_-_Brutalix.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
