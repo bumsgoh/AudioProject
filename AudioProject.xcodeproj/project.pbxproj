@@ -12,10 +12,9 @@
 		B333671420A31B1D00A19E2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B333671220A31B1D00A19E2D /* Main.storyboard */; };
 		B333671620A31B1D00A19E2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B333671520A31B1D00A19E2D /* Assets.xcassets */; };
 		B333671920A31B1D00A19E2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B333671720A31B1D00A19E2D /* LaunchScreen.storyboard */; };
-		B352A96E2178B79D00EDF119 /* Ketsa_-_15_-_sullen_faced.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B352A96D2178B79D00EDF119 /* Ketsa_-_15_-_sullen_faced.mp3 */; };
-		B352A9702178B7E000EDF119 /* Broke_For_Free_-_01_-_Night_Owl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B352A96F2178B7E000EDF119 /* Broke_For_Free_-_01_-_Night_Owl.mp3 */; };
-		B352A9722178B86B00EDF119 /* Yaka-anima_-_05_-_Mint_Tea_in_Sabilas_Garden.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B352A9712178B86B00EDF119 /* Yaka-anima_-_05_-_Mint_Tea_in_Sabilas_Garden.mp3 */; };
-		B352A9742178B8E100EDF119 /* Illocanblo__Csum_-_01_-_Brutalix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B352A9732178B8E100EDF119 /* Illocanblo__Csum_-_01_-_Brutalix.mp3 */; };
+		B352A9782178BFB700EDF119 /* Brutalix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B352A9752178BFB500EDF119 /* Brutalix.mp3 */; };
+		B352A97A2178BFB700EDF119 /* Mint Tea in Sabilas Garden.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B352A9772178BFB700EDF119 /* Mint Tea in Sabilas Garden.mp3 */; };
+		B352A97C2178C03B00EDF119 /* Night Owl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B352A97B2178C03B00EDF119 /* Night Owl.mp3 */; };
 		B3C3889D20ADE43E007E5E34 /* musicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C3889C20ADE43E007E5E34 /* musicData.swift */; };
 		B3D6DEE520A95C8E000271C1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D6DEE420A95C8E000271C1 /* MainViewController.swift */; };
 		B3D6DEEA20A975ED000271C1 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D6DEE920A975ED000271C1 /* MainTableViewCell.swift */; };
@@ -48,10 +47,9 @@
 		B34CF6B120AE6A7E0029EB98 /* AudioProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B352A96B2178468400EDF119 /* AudioProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B352A96C2178468400EDF119 /* AudioProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B352A96D2178B79D00EDF119 /* Ketsa_-_15_-_sullen_faced.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ketsa_-_15_-_sullen_faced.mp3"; sourceTree = "<group>"; };
-		B352A96F2178B7E000EDF119 /* Broke_For_Free_-_01_-_Night_Owl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Broke_For_Free_-_01_-_Night_Owl.mp3"; sourceTree = "<group>"; };
-		B352A9712178B86B00EDF119 /* Yaka-anima_-_05_-_Mint_Tea_in_Sabilas_Garden.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Yaka-anima_-_05_-_Mint_Tea_in_Sabilas_Garden.mp3"; sourceTree = "<group>"; };
-		B352A9732178B8E100EDF119 /* Illocanblo__Csum_-_01_-_Brutalix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Illocanblo__Csum_-_01_-_Brutalix.mp3"; sourceTree = "<group>"; };
+		B352A9752178BFB500EDF119 /* Brutalix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Brutalix.mp3; sourceTree = "<group>"; };
+		B352A9772178BFB700EDF119 /* Mint Tea in Sabilas Garden.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mint Tea in Sabilas Garden.mp3"; sourceTree = "<group>"; };
+		B352A97B2178C03B00EDF119 /* Night Owl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Night Owl.mp3"; sourceTree = "<group>"; };
 		B3C3889C20ADE43E007E5E34 /* musicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicData.swift; sourceTree = "<group>"; };
 		B3D6DEE420A95C8E000271C1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B3D6DEE920A975ED000271C1 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
@@ -120,10 +118,9 @@
 		B3C3888D20ADC10F007E5E34 /* musicFile */ = {
 			isa = PBXGroup;
 			children = (
-				B352A9712178B86B00EDF119 /* Yaka-anima_-_05_-_Mint_Tea_in_Sabilas_Garden.mp3 */,
-				B352A96F2178B7E000EDF119 /* Broke_For_Free_-_01_-_Night_Owl.mp3 */,
-				B352A96D2178B79D00EDF119 /* Ketsa_-_15_-_sullen_faced.mp3 */,
-				B352A9732178B8E100EDF119 /* Illocanblo__Csum_-_01_-_Brutalix.mp3 */,
+				B352A97B2178C03B00EDF119 /* Night Owl.mp3 */,
+				B352A9752178BFB500EDF119 /* Brutalix.mp3 */,
+				B352A9772178BFB700EDF119 /* Mint Tea in Sabilas Garden.mp3 */,
 			);
 			path = musicFile;
 			sourceTree = "<group>";
@@ -235,13 +232,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B352A96E2178B79D00EDF119 /* Ketsa_-_15_-_sullen_faced.mp3 in Resources */,
 				B333671920A31B1D00A19E2D /* LaunchScreen.storyboard in Resources */,
+				B352A97A2178BFB700EDF119 /* Mint Tea in Sabilas Garden.mp3 in Resources */,
+				B352A9782178BFB700EDF119 /* Brutalix.mp3 in Resources */,
+				B352A97C2178C03B00EDF119 /* Night Owl.mp3 in Resources */,
 				B333671620A31B1D00A19E2D /* Assets.xcassets in Resources */,
-				B352A9722178B86B00EDF119 /* Yaka-anima_-_05_-_Mint_Tea_in_Sabilas_Garden.mp3 in Resources */,
-				B352A9702178B7E000EDF119 /* Broke_For_Free_-_01_-_Night_Owl.mp3 in Resources */,
 				B333671420A31B1D00A19E2D /* Main.storyboard in Resources */,
-				B352A9742178B8E100EDF119 /* Illocanblo__Csum_-_01_-_Brutalix.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

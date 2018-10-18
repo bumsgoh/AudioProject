@@ -23,10 +23,7 @@ class ViewController: UIViewController {
     var songLength : Double?
     var Main : MainViewController! = MainViewController()
     var delegateV : AVAudioPlayerDelegate!
-    
-   
-    
-    
+
     @IBAction func playBtnPressed(_ sender: UIButton) {
 
         

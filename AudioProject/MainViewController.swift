@@ -9,13 +9,12 @@
 import UIKit
 import AVFoundation
 import MediaPlayer
-//timer
 
 class MainViewController:UIViewController, AVAudioPlayerDelegate,UITableViewDelegate,UITableViewDataSource {
+    
     @IBOutlet weak var tableView: UITableView!
     static var player : AVAudioPlayer!
     var ViewCont : ViewController!
-    
     var delegate : AVAudioPlayerDelegate?
     var timer : Timer!
     var durationOfMP3 : TimeInterval!
@@ -24,29 +23,27 @@ class MainViewController:UIViewController, AVAudioPlayerDelegate,UITableViewDele
     var timeScale : Float!
     @IBOutlet weak var playPauseBtn: UIButton!
     @IBOutlet weak var titleBottomBar: UILabel!
-    @IBOutlet weak var artistBottombar: UILabel!
+    @IBOutlet weak var artistBottomBar: UILabel!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+    }
     
+    override func viewWillAppear(_ animated: Bool) {
+        addPlayPauseButton()
+        extractSongInfo()
+    }
     
     //메인 뷰 쪽에서 플레이 버튼이 조정 가능하게 구현하려고 했으나 완성하지 못했습니다.
-    
     @IBAction func playButtonPressed(_ sender: UIButton) {
-        
         sender.isSelected = !sender.isSelected
-        
         if sender.isSelected{
             MainViewController.player?.play()
         } else {
             MainViewController.player?.pause()
         }
-       /*
-        if sender.isSelected {
-            self.makeAndFireTimer()
-        } else {
-            self.invalidateTimer()
-        }
-    */
-    
     }
     
     func initializePlayer (){
@@ -55,90 +52,58 @@ class MainViewController:UIViewController, AVAudioPlayerDelegate,UITableViewDele
             print("File 을 가져올 수 없습니다.")
             return
         }
+        
         do {
             try MainViewController.player = AVAudioPlayer(data : soundAsset.data)
-         //  MainViewController.player.delegate = self
-            
-            
         } catch let error as NSError {
             print("player 초기화 실패")
             print("code : \(error.code), message : \(error.localizedDescription)")
         }
         
     
-    } // static player가 play()되어 질 때 같이 사용해보려고 했으나 완성하지 못했습니다.
-        /*func makeAndFireTimer(){
-           self.timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: {[unowned self] (timer: Timer) in
-                //if self.Slider.isTracking {return}
-               // self.updateTimeLabelText(time: self.player.currentTime)
-                //self.Slider.value = Float(self.player.currentTime)
-            })
-            MainViewController.timer.fire()
-            
-        }
+    }
+    
+    func addPlayPauseButton(){
+        playPauseBtn.translatesAutoresizingMaskIntoConstraints = false
+        playPauseBtn.setImage(UIImage(named:"newPlayBtn"), for: UIControlState.normal)
+        playPauseBtn.setImage(UIImage(named:"newPauseBtn"),for: UIControlState.selected)
+        playPauseBtn.addTarget(self, action: #selector(self.playButtonPressed(_:)),for: UIControlEvents.touchUpInside)
         
-        func invalidateTimer(){
-            MainViewController.timer.invalidate()
-            MainViewController.timer = nil
-            
-        }*/
-        func addPlayPauseButton(){
-            //let button: UIButton = UIButton(type: UIButtonType.custom)
-            playPauseBtn.translatesAutoresizingMaskIntoConstraints = false
-            
-            //self.view.addSubview(button)
-            
-            
-            playPauseBtn.setImage(UIImage(named:"newPlayBtn"), for: UIControlState.normal)
-            playPauseBtn.setImage(UIImage(named:"newPauseBtn"),for: UIControlState.selected)
-            
-            playPauseBtn.addTarget(self, action: #selector(self.playButtonPressed(_:)),for: UIControlEvents.touchUpInside)
-            
-            
-        }
+    }
+    
     
     
     // MARK : -TableView
     // 실제 시장에 나와있는 플레이어 앱을 참고로 최대한 비슷하게 만들어보기위해서 테이블뷰를 사용하였습니다.
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       
         return musicInfo.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print(musicInfo)
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! MainTableViewCell
         cell.songTitle.text = musicInfo[indexPath.row].songTitle
         cell.songArtist.text = "- \(musicInfo[indexPath.row].songArtist)"
         cell.songImage.image = musicInfo[indexPath.row].songArtwork
-        
-        
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         initializePlayer()
-        
-        
-        
-        do{MainViewController.player.stop()
-            
-            
+        do{
+            MainViewController.player.stop()
+            print(musicInfo[indexPath.row].songTitle)
             let path = Bundle.main.path(forResource: musicInfo[indexPath.row].songTitle, ofType: ".mp3")
             
-                
-            try MainViewController.player = AVAudioPlayer(contentsOf:NSURL(fileURLWithPath: path!) as URL )
+            try MainViewController.player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: path!))
+            //AVAudioPlayer(contentsOf:NSURL(fileURLWithPath: path!) as URL )
             MainViewController.player.delegate = self
-            
             MainViewController.player.play()
-            
         }
-            
          catch{
             print("failed")
         }
             titleBottomBar.text = musicInfo[indexPath.row].songTitle
-            artistBottombar.text = musicInfo[indexPath.row].songArtist
-        
-        
+            artistBottomBar.text = musicInfo[indexPath.row].songArtist
         }
     
     //디렉토리내에 있는 음악파일에 대한 정보를 가져오는 method입니다.
@@ -200,13 +165,9 @@ class MainViewController:UIViewController, AVAudioPlayerDelegate,UITableViewDele
                 ViewCont.songArtist = musicInfo[indexPath.row].songArtist
                 ViewCont.songArtwork = musicInfo[indexPath.row].songArtwork
                 ViewCont.songLength = musicInfo[indexPath.row].timeSecond
-              
-                
-                
             }
         
             ViewCont.delegateV = self
-          
         }
     }
     //MARK: - MainView Delegate
@@ -219,22 +180,7 @@ class MainViewController:UIViewController, AVAudioPlayerDelegate,UITableViewDele
         ViewCont.audioPlayerDecodeErrorDidOccur(player, error: error)
     }
    
-    override func viewDidLoad() {
-        
-        super.viewDidLoad()
-        
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
-        
-        
-        
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
     
-        addPlayPauseButton()
-        extractSongInfo()
-    }
     
 
 }
